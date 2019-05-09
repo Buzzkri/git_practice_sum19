@@ -6,12 +6,12 @@ def puts_git(cmd)
 end
 
 def menu
-  puts "MAIN MENU".colorize(:cyan)
+  puts "MAIN MENU".colorize(:black)
   puts "1: Enter git command".colorize(:yellow)
   puts "2: Exit".colorize(:yellow)
   choice = gets.to_i
   # sleep(3)
-  # print "clear"
+  system("clear")
   case choice
   when 1
     puts "Enter git command".colorize(:green)
